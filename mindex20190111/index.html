@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>麒玲義大利麵</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-icon="home" class="ui-btn-active ui-state-persist">Page1</a></li>
+                    <li><a href="#page2" data-icon="search">Page2</a></li>
+                    <li><a href="#page3" data-icon="gear">Page3</a></li>
+                    <li><a href="#page4" data-icon="cloud">Page4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>線上定位</p>
+            <form method="post" action="#">
+                <div class="ui-field-contain">
+                    <label for="fname">姓:</label>
+                    <input type="text" name="fname" id="fname">
+                    <label for="lname">名:</label>
+                    <input type="text" name="lname" id="lname" data-clear-btn="true">
+                    <label for="tel">電話:</label>
+                    <input type="tel" name="tel" id="tel">
+                    <label for="email">電子信箱:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="lname">用餐日期:</label>
+                    <input type="datetime-local" name="mtime" id="lname" data-clear-btn="true">
+                </div>
+                <fieldset data-role="controlgroup">
+                        <label for="male">先生</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="female">女士</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                </fieldset>
+                 <input type="submit" value="送出" data-inline="true">
+            </form>
+
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>@台北市忠孝東路一段82號</h1>
+        </div>
+    </div>
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>Welcome To My Homepage-2</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-icon="home">Page1</a></li>
+                    <li><a href="#page2" data-icon="search" class="ui-btn-active ui-state-persist">Page2</a></li>
+                    <li><a href="#page3" data-icon="gear">Page3</a></li>
+                    <li><a href="#page4" data-icon="cloud">Page4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h2>Click On The Gear Icons!</h2>
+            <ul data-role="listview" data-inset="true">
+                <li data-role="divider">Browsers</li>
+                <li>
+                    <a href="#">
+                        <img src="chrome.png">
+                        <h2>Google Chrome</h2>
+                        <p>Google Chrome is a free, open-source web browser. Released in 2008.</p>
+                    </a>
+                    <a href="#download" data-transition="pop" data-icon="gear">Download Browser</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="firefox.png">
+                        <h2>Mozilla Firefox</h2>
+                        <p>Firefox is a web browser from Mozilla. Released in 2004.</p>
+                    </a>
+                    <a href="#download" data-transition="pop" data-icon="gear">Download Browser</a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Footer Text</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="download" data-dialog="true">
+        <div data-role="main" class="ui-content">
+            <h3>Split Button Example</h3>
+            <p>The buttons below are for demonstration purposes only.</p>
+            <a href="#" class="ui-btn ui-btn-inline ui-btn-b ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini"
+                data-rel="back">Download</a>
+            <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-inline ui-mini" data-rel="back">Cancel</a>
+        </div>
+    </div>
+
+
+    <div data-role="page" id="page3">
+        <div data-role="header">
+            <h1>Page3</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-icon="home">Page1</a></li>
+                    <li><a href="#page2" data-icon="search">Page2</a></li>
+                    <li><a href="#page3" data-icon="gear" class="ui-btn-active ui-state-persist">Page3</a></li>
+                    <li><a href="#page4" data-icon="cloud">Page4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h2>Click on the text</h2>
+            <input type="range" name="points" id="points" value="50" min="0" max="100">
+            <input type="range" name="points" id="points" value="50" min="0" max="100" data-show-value="true">
+            <input type="range" name="points" id="points" value="50" min="0" max="100" data-popup-enabled="true"
+                data-show-value="true">
+            <input type="range" name="points" id="points" value="50" min="0" max="100" data-highlight="true"
+                data-show-value="true">
+
+            <div class="ui-field-contain">
+                <label for="day">Select Day</label>
+                <select id="flip-1" name="flip-1" data-role="slider">
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select>
+            </div>
+            <div class="ui-field-contain">
+                <input type="checkbox" data-role="flipswitch" name="switch" id="switch" data-on-text="選我"" data-off-text="
+                    不要">
+            </div>
+            <fieldset class="ui-field-contain">
+                <label for="day">Select Day</label>
+                <select name="day" id="day" data-native-menu="false">
+                    <option value="mon">Monday</option>
+                    <option value="tue">Tuesday</option>
+                    <option value="wed">Wednesday</option>
+                </select>
+                <select name="day" id="day">
+                    <optgroup label="Weekdays">
+                        <option value="mon">Monday</option>
+                        <option value="tue">Tuesday</option>
+                        <option value="wed">Wednesday</option>
+                    </optgroup>
+                    <optgroup label="Weekends">
+                        <option value="sat">Saturday</option>
+                        <option value="sun">Sunday</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <div data-role="collapsible">
+                <h1>Click me - I'm collapsible!</h1>
+                <p>I'm the expanded content.</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>Click me - I'm collapsible!</h1>
+                <p>I'm the expanded content.</p>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h1>Click me - I'm collapsible!</h1>
+                <p>I'm now expanded by default.</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>Click me - I'm collapsible!</h1>
+                <p>I'm the expanded content.</p>
+                <div data-role="collapsible">
+                    <h1>Click me - I'm a nested collapsible block!</h1>
+                    <p>I'm the expanded content in the nested collapsible block.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="page4">
+        <div data-role="header">
+            <p></p>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-icon="home">Page1</a></li>
+                    <li><a href="#page2" data-icon="search">Page2</a></li>
+                    <li><a href="#page3" data-icon="gear">Page3</a></li>
+                    <li><a href="#page4" data-icon="cloud" class="ui-btn-active ui-state-persist">Page4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="page4main" data-role="main" class="ui-content">
+            <h2>hello world</h2>
+        </div>
+        <div data-role="panel" id="myPanel">
+            <h2>Panel Header..</h2>
+            <ul data-role="listview">
+                <li><a href="#page1">page1</a></li>
+                <li><a href="#page2">page2</a></li>
+                <li><a href="#page3">page3</a></li>
+                <li><a href="#page4">page4</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).on('pagecreate', '#page4', function(){
+        $('#page4main').on('swiperight', function(){
+            $('#myPanel').panel('open');
+        });
+    });
+</script>
+</html>

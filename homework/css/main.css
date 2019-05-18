@@ -1,0 +1,34 @@
+body {
+    height:8.5in
+}
+#header {
+    text-align: center;
+    position:fixed;
+    width:100%; height:15%;
+    top:0; right:0; bottom:auto; left:0;
+    background-color:rgb(235, 195, 121)
+}
+#sidebar {
+    position:fixed;
+    width:10em; height:auto;
+    top:15%; right:auto; bottom:10px; left:0;
+    background-color:#1a0f00
+}
+#main {
+    position:fixed; 
+    width:auto; height : auto;
+    top:15%; right : 0; bottom : 10px; left : 10em;
+    background-color:#ff9900
+}
+#footer {
+    position:fixed;
+    width:100%; height:100px;
+    top:95%; right:0; bottom:0; left:0;
+    background-color:#eeeeee
+}
+#logo  {
+    width:80px; height:80px;
+    float: left;
+    opacity: 0.5; 
+    filter: alpha(opacity=50);
+}
